@@ -5,7 +5,7 @@ import lombok.Data;
 
 
 @Entity
-@Table(name = "PRODUCT")
+@Table(name = "PRODUCT", schema = "INVENTORY1")
 @Data
 public class Product {
     @Id
@@ -26,5 +26,4 @@ public class Product {
     private int weight;
     @Column(name = "PRODUCT_CATEGORY")
     private String productCategory;
-
 }

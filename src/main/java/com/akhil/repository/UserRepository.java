@@ -9,12 +9,16 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-@EnableJpaRepositories
 public interface UserRepository extends JpaRepository<Product, Integer> {
 
-
-    @Query(value = "SELECT * FROM PRODUCT", nativeQuery = true)
+    @Query(value = "SELECT * FROM INVENTORY1.PRODUCT",nativeQuery = true)
     List<Product> findAllProducts();
+
+
+
+
+
+
 
 }
 

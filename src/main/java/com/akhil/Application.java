@@ -1,7 +1,5 @@
 package com.akhil;
 
-
-import com.akhil.Controller.HomeController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
