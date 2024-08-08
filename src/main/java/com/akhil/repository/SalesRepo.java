@@ -12,5 +12,6 @@ public interface SalesRepo extends JpaRepository<Sales,Integer> {
     @Query(value = "SELECT * FROM INVENTORY1.SALES", nativeQuery = true)
     List<Sales> getAllSales();
 
+    List<Sales> findSalesByProductID(int productID);
 
 }

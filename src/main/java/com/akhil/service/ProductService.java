@@ -2,7 +2,7 @@ package com.akhil.service;
 
 
 import com.akhil.model.Product;
-import com.akhil.repository.UserRepository;
+import com.akhil.repository.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,14 +12,14 @@ import java.util.Optional;
 @Service
 public class ProductService {
     @Autowired
-    private UserRepository userRepository;
+    private ProductRepo productRepo;
 
     public List<Product> getAllProducts(){
-        return userRepository.findAllProducts();
+        return productRepo.findAllProducts();
     }
 
     public Optional<Product> getProductById(int productId){
-        return userRepository.findById(productId);
+        return productRepo.findById(productId);
     }
 
 }
